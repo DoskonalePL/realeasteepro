@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Real Estate Pro</title>
+  </head>
+  <body>
+    <header role="banner">
+      <div class="logo"><a href="/">🏠 Real Estate Pro</a></div>
+      <nav aria-label="Główne">
+        <ul class="menu">
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="top">
+      <section class="hero">
+        <h1>Twoje wymarzone mieszkanie — w zasięgu ręki</h1>
+        <p>Najlepsze oferty nieruchomości w jednym miejscu.</p>
+        <a class="btn btn--primary" href="#oferta">Zobacz oferty</a>
+      </section>
+      <section id="oferta" aria-labelledby="oferta-heading">
+        <h2 id="oferta-heading">Aktualne oferty</h2>
+        <!-- karty nieruchomości (jutro Flexbox) -->
+      </section>
+
+      <section id="blog" aria-labelledby="blog-heading">
+        <h2 id="blog-heading">Rynek &amp; porady</h2>
+        <!-- najnowsze wpisy (pętla WP – tydz. 2) -->
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; <span id="year"></span> Real Estate Pro. Wszelkie prawa
+        zastrzeżone.
+      </p>
+    </footer>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
